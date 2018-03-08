@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|PT+Sans+Narrow');
+
+body {
+    position: relative;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 22px;
+}
+
+a {
+    color: #f9f;
+    text-decoration: none;
+}
+
+.header {
+    width: calc(100% - 20px);
+    position: relative;
+    max-width: 100%;
+    margin-top: 0;
+    min-height: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav__icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    align-self: center;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+}
+
+#one,#two,#three {
+    width: 20px;
+    padding: 0;
+    display: block;
+    margin: auto;
+    margin-bottom: 3px;
+    border: 1px solid #fff;
+}
+
+.nav {
+    position: fixed;
+    margin-left: -100%;
+    top: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    text-align: right;
+    color: #000;
+}
+
+.nav__list > li > a {
+    color: inherit;
+}
+
+.nav__list {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+
+.nav__list > li {
+    float: left;
+    width: calc(100% - 20px);
+    height: 50px;
+    padding: 10px;
+}
+
+.nav__list > li:hover {
+    background-color: rgba(207, 207, 207, 0.2);
+    color: #000;
+}
+
+@keyframes vibrate {
+    from {margin-top: 20px;}
+    to { margin-top: 40px;}
+}
+
+.scroll__down {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 28px;
+    background-color: transparent;
+    color: #fff;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    animation: vibrate .7s linear .2s infinite alternate-reverse;
+}
+
+.js_text {
+    color: #f7df1e;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.about__me, .contact, .work , .about {
+    width: calc(100% - 30px);
+    padding: 15px;
+}
+
+.work a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.stack h3 {
+    text-align: center;
+}
+
+.individual_work, .individual_work__image {
+    width: calc(100% - 20px);
+    max-width: 350px;
+    padding: 10px;
+    height: auto;
+}
+
+.individual_work h5 {
+    text-align: center;
+}
+
+.individual_work__image {
+    width: calc(100% - 20px);
+    max-width: 350px;
+    padding: 10px;
+    height: 150px;
+    position: relative;
+}
+
+.individual_work__image img {
+    max-width: 100%;
+    height: 100%; 
+}
+
+@media (min-width: 600px) {
+    .header {
+        width: calc(80% - 20px);
+        padding: 10px;
+        margin: auto;
+        height: 30px; 
+    }
+
+    .header > h4 {
+        margin: 0;
+    }
+
+    .nav {
+        position: relative;
+        margin-left: 0;
+        width: 75%;
+        max-width: 500px;
+        text-align: center;
+        height: 100%;
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .nav__list > li {
+        width: 33%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .nav__icon {
+        display: none;
+    }
+
+    .about__me, .contact , .about {
+        width: calc(80% - 30px);
+        padding: 30px;
+    }
+
+    .work {
+        width: calc( 100% - 20px);
+        padding: 10px;
+        max-width: 800px;
+        margin: auto;
+    }
+    
+    .stack {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .individual_work {
+        width: 45%;
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 901px) {
+
+    body {
+        font-size: 26px;
+    }
+        
+    .about__me, .contact, .about {
+        width: calc(70% - 30px);
+        max-width: 700px;
+        padding: 30px;
+    }
+}

@@ -1,0 +1,16 @@
+<header class="header">
+  <h4 routerLink=''>{{title}}</h4>
+  <button class="nav__icon" (click)='animateMe()'>
+    <div id='one' [@translateDiv]='position'></div>
+    <div id='two' [@disappearThree]='position'></div>
+    <div id='three'[@translateDivTwo]='position'></div>
+  </button>
+  <nav class="nav" [@displayNav]='state' (click)='hideMe()'>
+    <ul class="nav__list">
+      <li routerLink='about'>About Me</li>
+      <li routerLink='work'>Work</li>
+      <li><a href="https://medium.com/@timibadass">Writing</a></li>
+    </ul>
+  </nav>
+</header>
+<router-outlet></router-outlet>
