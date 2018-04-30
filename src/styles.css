@@ -143,6 +143,43 @@ a {
     height: 100%; 
 }
 
+.talks_teaching {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: auto;
+    max-width: 800px;
+}
+
+.teaching {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.teaching > h4 {
+    text-align: center;
+}
+
+.talks {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.talk {
+    width: calc(100% - 5px);
+    margin: auto;
+    padding: 10px;
+    min-width: 280px;
+    max-width: 450px;
+}
+
+.talk > h5 {
+    text-align: center;
+}
+
 @media (min-width: 600px) {
     .header {
         width: calc(80% - 20px);
@@ -206,6 +243,10 @@ a {
         width: 45%;
         max-width: 350px;
         margin-bottom: 10px;
+    }
+
+    .talk {
+        min-width: 350px;
     }
 }
 
