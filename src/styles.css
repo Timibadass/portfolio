@@ -247,6 +247,8 @@ a {
 
     .talk {
         min-width: 350px;
+        max-width: 500px;
+        text-align: center;
     }
 }
 
@@ -260,5 +262,9 @@ a {
         width: calc(70% - 30px);
         max-width: 700px;
         padding: 30px;
+    }
+
+    .talk {
+        max-width: 100%;
     }
 }
