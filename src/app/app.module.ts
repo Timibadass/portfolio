@@ -9,6 +9,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { TalkComponent } from './talk/talk.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { TalkComponent } from './talk/talk.component';
     HomepageComponent,
     WorkComponent,
     AboutComponent,
-    TalkComponent
+    TalkComponent,
+    HeaderComponent
   ],
   imports: [
     AppRoutingModule,
